@@ -8,7 +8,9 @@ app.use(express.json());
 const PORT = 3001;
 
 // MongoDB connection
-const client = new MongoClient("mongodb://mongodb:27017");
+const client = new MongoClient(
+    process.env.MONGO_URL || "mongodb://mongodb:27017"
+);
 
 async function connectDB() {
     await client.connect();
