@@ -55,10 +55,6 @@ devops-student-api/
 
 ### Health Check
 
-```http
-GET /health
-```
-
 Example response:
 
 ```json
@@ -66,10 +62,6 @@ Example response:
 ```
 
 ### Get Students
-
-```http
-GET /students
-```
 
 Example response:
 
@@ -139,12 +131,6 @@ The API will be available at:
 
 ```text
 http://localhost:3002
-```
-
-Health check:
-
-```text
-http://localhost:3002/health
 ```
 
 Students:
@@ -242,7 +228,6 @@ This project demonstrates practical knowledge of:
 * Environment variables
 * Docker Hub
 * GitHub Actions
-* API health monitoring
 
 ## 💰 Cloud Deployment
 
