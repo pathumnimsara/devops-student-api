@@ -1,0 +1,12 @@
+services:
+  student-api:
+    image: pathumnimsara/student-api:latest
+    ports:
+      - "3001:3001"
+    environment:
+      MONGO_URL: mongodb://mongodb:27017
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:8
